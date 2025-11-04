@@ -68,3 +68,14 @@
 
 ![AirBnB ER Diagram](AirBnB-ER_Diagram.png)
 
+## 🔗 Relationships Summary
+
+| Relationship | Type | Description |
+|---------------|------|-------------|
+| **User – Property** | 1 : M | A *User (host)* can list many *Properties* |
+| **User – Booking** | 1 : M | A *User (guest)* can make many *Bookings* |
+| **Property – Booking** | 1 : M | A *Property* can have many *Bookings* |
+| **Booking – Payment** | 1 : 1 | Each *Booking* has one *Payment* |
+| **User – Review** | 1 : M | A *User* can leave many *Reviews* |
+| **Property – Review** | 1 : M | A *Property* can receive many *Reviews* |
+| **User – Message (sender/recipient)** | M : M | *Users* can exchange *Messages* with each other |
