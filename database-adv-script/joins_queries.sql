@@ -10,7 +10,8 @@ ON b.user_id = u.user_id;
 SELECT *
 FROM properties as p
 LEFT JOIN reviews as r
-ON p.property_id = r.property_id;
+ON p.property_id = r.property_id
+ORDER BY r.review_id ASC;
 
 -- Query using Full outer join
 
